@@ -8,7 +8,7 @@ angular
     let speech;
     let updateInterval;
     let blinkingInterval = null;
-    let url ="resources/avatars/brunette.glb"; 
+    let url ="brunette.glb"; 
 
     // Viseme mapping (same as before)
     const corresponding = {
@@ -771,7 +771,7 @@ angular
 
     const loader = new THREE.TextureLoader();
     loader.load(
-      "resources/textures/bg2.jpg",
+      "bg2.jpg",
       (texture) => {
         console.log("Background texture loaded successfully.");
         scene.background = texture;
@@ -932,7 +932,7 @@ angular
     }
 
     $scope.speakQuestion = function () {
-      const audioFile = "resources/audios/audio2.wav"; // Path to your audio file
+      const audioFile = "audio2.wav"; // Path to your audio file
 
       const audio = new Audio(audioFile);
       console.log("Playing audio:", audioFile);
